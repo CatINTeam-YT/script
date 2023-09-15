@@ -4,20 +4,16 @@ local Window = Library.CreateLib("Чит", "RJTheme3")
 
 local Tab = Window:NewTab("Игрок")
 
-local Section = Tab:NewSection("Doors")
+local Section = Tab:NewSection("Хз как назвать")
 
-Section:NewSlider("Супер скорость", "Поменяйте свою скорость", 250, 0, function(s)
+Section:NewSlider("Супер скорость", "Поменяйте свою скорость", 500, 0, function(s)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
 
-Section:NewSlider("Супер прыжок", "Поменяйте свою прыжок", 250, 0, function(s)
+Section:NewSlider("Супер прыжок", "Поменяйте свою прыжок", 500, 0, function(s)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
 end)
 
-local Tab = Window:NewTab("Игра")
-
-local Section = Tab:NewSection("Doors")
-
-Section:NewButton("Меч", "Нажмити чтобы выдать себе меч", function()
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 80
+Section:NewSlider("Жизнь", "Поменяйте свой макс жизни", 600, 0, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.MaxHealth = s
 end)
